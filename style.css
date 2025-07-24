@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+.darkTheme{
+    background-color: #ffff;
+    color: black;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 30px;
+    background-image : linear-gradient(to bottom, #cac9c9,#656464, #111010);
+    position: relative;
+    top: 0;
+    color: white;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20rem;
+    
+}
+.logoText{
+    font-size: 2rem;
+    margin-left: 10px;
+}
+.navLinksContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.listItems{
+    
+    color: white;
+    font-size: 1.5rem;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
