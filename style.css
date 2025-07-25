@@ -20,7 +20,8 @@ body{
     justify-content: space-between;
     padding: 8px 30px;
     background-image : linear-gradient(to bottom, #cac9c9,#656464, #111010);
-    position: relative;
+    position: fixed;
+    width: 100%;
     top: 0;
     color: white;
 }
