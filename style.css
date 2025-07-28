@@ -48,9 +48,6 @@ body{
 .navLinks {
     display: flex;
     flex-direction: row;
-    list-style: none;
-    gap: 20px;
-    list-style: none;
     align-items: center;
     align-content: center;
     justify-content: center;
