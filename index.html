@@ -42,19 +42,20 @@
             </nav>
         </header>
         <div class="homeContent">
-            <div>
+            <div class="homeText">
                 <h1>Welcome to My Portfolio</h1>
                 <p>Explore my projects, skills, and experiences.</p>
                           <!-- buttons for resume and profile -->
                 <div>
-                    <button>resume</button>
-                    <button href="#portfolio">my profile</button>
+                    <button class="btn viewBtn" onclick="window.open('//drive.google.com/file/d/1BhMI5Ai0ASa_mCmg8t4IH9xXG4ilnydr/view?usp=sharing', '_blank')"> View Resume</button>
+                 <button class="btn downloadBtn" onclick="window.open('//drive.google.com/file/d/1BhMI5Ai0ASa_mCmg8t4IH9xXG4ilnydr/view?usp=sharing', '_blank') " download> Download Resume</button>
+
                 </div>
-                <div class="card">
+                <button class="btn profileBtn" href="#portfolio">My Profile</button>
+            </div>
+                <div class="card" id="IdCard">
                     <img src="my_side_view_image.png"  class="sideView" alt="view of me">
                 </div>
-            </div>
-
         </div>
     </section>
 

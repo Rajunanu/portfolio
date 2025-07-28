@@ -2,13 +2,23 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: rgb(3, 3, 3);
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+}
+/* light theme styles */
 .darkTheme{
-    background-color: #ffff;
+    background-color: #e3dede;
     color: black;
 }
+.changeCard{
+    background-image: linear-gradient(to bottom,  #7d0c0c, #000000) ;
+}
+
+
+
 .homePage{
     display: flex;
     flex-direction: column;
@@ -21,7 +31,7 @@ body{
     padding: 8px 30px;
     background-image : linear-gradient(to bottom, #cac9c9,#656464, #111010);
     position: fixed;
-    width: 100%;
+    width: 96.5%;
     top: 0;
     color: white;
 }
@@ -39,35 +49,161 @@ body{
     font-size: 2rem;
     margin-left: 10px;
 }
-.navLinksContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.navLinks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    
 
-
-}
 a{
     text-decoration: none;
     color: white;
 }
-.listItems{
+
+
+.homeText div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    color: white;
+    padding: auto;
+    gap: 20px;
+  }
+
+.btn{
+    
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: auto;
+    padding: 10px 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.viewBtn{
+    background-color: #40bf44; /* Green */
+    
+}
+.downloadBtn{
+    background-color: #008CBA; /* Blue */
+    
+}
+.profileBtn{
+    background-color: #e2ac46; /* Red */
+    margin: 10px;
+    
+}
+.btn:hover{
+     background-image: linear-gradient(to bottom,white, #d3c9c9,#656464, #111010);
+    }
+.viewBtn:hover{
+    box-shadow: 0 6px 10px rgba(64, 191, 68, 0.615);
+    transition: transform 0.4s ease;
+}
+.downloadBtn:hover{
+    box-shadow: 0 6px 10px rgba(0, 140, 186, 0.615);
+}  
+.profileBtn:hover{
+    box-shadow: 0 6px 10px rgba(226, 172,   70, 0.615);
+}
+
+                    /* landscape mode */
+@media screen and (orientation: landscape) and (min-width: 769px) {
+
+    .navLinksContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    .navLinks {
+    display: flex;
+    
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+    .navLinks li {
+        margin: 0 10px;
+        font-size: 1.1rem;
+        
+        color: rgb(13, 13, 13);
+    }
+    .logoText{
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .logo{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 20rem;
+    }
+  .homeContent{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    height: 100%;
+  }
+  .homeText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .homeText h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .homeText p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+  
+  .card{
+    border-radius: 40rem;
+    width: 22rem;
+    height: 22rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    background-image: linear-gradient(to bottom,#ffff, #cac9c9,#656464, #111010) ;
+    
+}
+.sideView{
+    width: 100%;
+    zoom: 20px;
+    height: 100%;
+    border-radius: 20rem;
+    object-fit: cover;
+}
+
+.listItems{
+
+    color: rgb(20, 20, 20);
     font-size: 1.5rem;
 }
-.btn{
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
+.listItems:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    
+}
+.sideView:hover{
+    box-shadow: 0 6px 10px rgba(229, 22, 22, 0.615);
+}
+.card :hover{
+    transform: scale(1.15);
+    transition: transform 0.4s ease;
+}
+
+
+
+  
 }
