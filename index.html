@@ -33,13 +33,28 @@
                         <li class="ListItems"><a href="#projects">Projects</a></li>
                         <li class="ListItems"><a href="#skills">Skills</a></li>
                         <li class="ListItems"><a href="#contact">Contact</a></li> 
-                        <li class="btn" onclick="toggleTheme()" id="theme-toggle"><a href=""></a><i class="bi bi-sun"></i></li>
+                        
                     </ul>
-                    
+
+                    <a class="btn" onclick="toggleTheme()" id="theme-toggle"><i class="bi bi-sun"></i></a>
+                
+                                        <!-- navigation links in small device-->
+                    <div class="hamburger">
+                        <a class="btn " onclick="toggleMenu()" href="#menu"><i class="bi bi-list"></i></a>
+                    </div>
                 </div>
-                
-                
+            
+                                        <!-- navigation links in small device-->
             </nav>
+            <div class="navLinksContainerMD" id="menu">
+                    <ul class="navLinksMD">
+                        <li class="ListItems"><a href="#home">Home</a></li>
+                        <li class="ListItems"><a href="#about">About</a></li>
+                        <li class="ListItems"><a href="#projects">Projects</a></li>
+                        <li class="ListItems"><a href="#skills">Skills</a></li>
+                        <li class="ListItems"><a href="#contact">Contact</a></li> 
+                    </ul>
+                </div>
         </header>
         <div class="homeContent">
             <div class="homeText">
@@ -47,6 +62,7 @@
                 <p>Explore my projects, skills, and experiences.</p>
                           <!-- buttons for resume and profile -->
                 <div>
+                    
                     <button class="btn viewBtn" onclick="window.open('//drive.google.com/file/d/1BhMI5Ai0ASa_mCmg8t4IH9xXG4ilnydr/view?usp=sharing', '_blank')"> View Resume</button>
                  <button class="btn downloadBtn" onclick="window.open('//drive.google.com/file/d/1BhMI5Ai0ASa_mCmg8t4IH9xXG4ilnydr/view?usp=sharing', '_blank') " download> Download Resume</button>
 
