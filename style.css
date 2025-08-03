@@ -221,8 +221,6 @@ a:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 20px;
-        
     }
     
     .navLinks{
@@ -283,7 +281,7 @@ a:hover{
     }
     .card{
         border-radius: 40rem;
-        width: 55%  ;
+        width: 58%  ;
         height: auto;
         display: flex;
         order: 3;
@@ -301,5 +299,9 @@ a:hover{
         border-radius: 20rem;
         object-fit: cover;
     }
+    .homeText button {
+        display: none;
+    }
+    
 
 }
