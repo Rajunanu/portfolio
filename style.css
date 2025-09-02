@@ -45,7 +45,9 @@ header{
     width: 3.3rem;
     height: 3.3rem;
     border-radius: 20rem;
-    
+}
+.homeContent{
+    height: 100%;
 }
 .logoText{
     font-size: 1.8rem;
@@ -67,6 +69,7 @@ a{
     border-radius: 10px;
     margin: 5px;
     border-radius: 10px;
+    border: none;
     width: auto;
     padding: 10px 10px;
     font-size: 18px;
@@ -82,6 +85,7 @@ a{
     background-color: #40bf44; /* Green */
     
 }
+
 .downloadBtn{
     background-color: #008CBA; /* Blue */
     
@@ -90,6 +94,12 @@ a{
     background-color: #e2ac46; /* Red */
     margin: 10px;
     
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #9e9c97;
+    margin: 0px;
 }
 .btn:hover{
      background-image: linear-gradient(to bottom,white, #d3c9c9,#656464, #111010);
@@ -111,15 +121,40 @@ a{
     transform: scale(1.15);
     transition: transform 0.4s ease;
 }
+        /* about me section */
+.aboutPage{
+    display: flex;
+    flex-direction: row;
+    
+    height: 100vh;
+    top: auto;
+}
 
-                    /* landscape mode */
+    .aboutSubtitle{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 0 0 2rem 3rem;
+        display: flex;
+        
+    }
+
+
+
+
+                        /* landscape mode */
 @media screen and (orientation: landscape) and (min-width: 769px) {
+                    
+                        /* home page styles */
+
     .navLinksContainerMD{
         display: none;
     }
 
     .hamburger{
         display: none;
+    }
+    .homeTextMD{
+    display: none;
     }
     .navLinks {
     display: flex;
@@ -130,12 +165,10 @@ a{
     align-items: center;
     align-content: center;
     justify-content: center;
-}
+    }
     .navLinks li {
         margin: 0 10px;
         font-size: 1.1rem;
-        
-        
     }
     .logoText{
         font-size: 2rem;
@@ -172,7 +205,6 @@ a{
     font-weight: lighter;
     line-height: 1.5;
   }
-  
   .card{
     border-radius: 40rem;
     width: 22rem;
@@ -184,43 +216,70 @@ a{
     margin-left: 4rem;
     background-image: linear-gradient(to bottom,#ffff, #cac9c9,#656464, #111010) ;
     }
-.sideView{
+    .sideView{
     width: 100%;
     zoom: 20px;
     height: 100%;
     border-radius: 20rem;
     object-fit: cover;
-}
- .navLinks a{
+    }
+    .navLinks a{
     color: rgb(180, 172, 172);
     text-decoration: none;
     transition: transform 0.5s ease, color 0.5s ease, text-decoration 0.5s ease;
- }
-
-.ListItems{
+    }
+    .ListItems{
     list-style: none;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    
-}
-.ListItems:hover{
+    }
+    .ListItems:hover{
     transform: scale(1.3);
     transition: transform 0.5s ease;
     text-decoration: underline;
-}
-a:hover{
+    }
+    a:hover{
     color: #fbfaf6;
     text-decoration: underline;
-}   
-
-
+    }   
+    .homeText button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px; 
+        font-size: 1.2rem;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }     
+                        /** about me section */
+    .aboutBanner{
+    background-image:url("https://res.cloudinary.com/dmlwaxjt1/image/upload/its_me_kcnsyk.jpg");
+    background-size: cover;
+    width: 75vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .aboutTitle{
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 8.5rem;
+    display: flex;
+    justify-content: center;
+    }
+    
 }
 @media  screen and (max-width: 768px) {
     .hamburger{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .homePage{
+        height: auto;
     }
     
     .navLinks{
@@ -261,6 +320,7 @@ a:hover{
         justify-content: center;
         justify-self: center; 
         margin-top: 10rem ;
+        height: 100vh;
     }
     .homeText{
         text-align: center;
@@ -288,13 +348,12 @@ a:hover{
         justify-content: center;
         justify-self: center;
         align-items: center;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         background-image: linear-gradient(to bottom,#ffff, #cac9c9,#656464, #111010) ;
     }
     .sideView{
         width: 100%;
-        
         height: 100%;
         border-radius: 20rem;
         object-fit: cover;
@@ -302,6 +361,13 @@ a:hover{
     .homeText button {
         display: none;
     }
-    
+    .aboutContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
 
 }
